@@ -8,7 +8,7 @@ class Solution(object):
         import re
 
         cleaned_s = re.sub(r'[^a-zA-Z0-9]', '', s.lower())
-        print(cleaned_s)
+        
 
         c_s = cleaned_s.replace(" ", "")
 
