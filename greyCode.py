@@ -29,3 +29,5 @@ def grey_code(num, length):
     return out
 print(grey_code(12,16))
 
+
+
