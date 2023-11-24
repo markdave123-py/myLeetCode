@@ -5,9 +5,20 @@ class Solution(object):
         :rtype: List[int]
         """
 
-        seen = {}
+        l = 0
 
-        for i, temp in enumerate(temperatures):
-            seen[temp] = i
+        r = len(temperatures)
+        out = []
 
-        print(seen)
+        while l < r:
+            for i, ele in enumerate(temperatures[l:]):
+                print(i)
+                if temperatures[l] < ele:
+                    out.append(i)
+                    break
+
+            else:
+                out.append(0)
+
+            l += 1
+        return out
