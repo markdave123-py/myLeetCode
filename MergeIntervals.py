@@ -10,7 +10,6 @@ class Solution(object):
 
         for start, end in intervals[1:]:
             lastEnd = output[-1][1]
-
             if start <= lastEnd:
                 output[-1][1] = max(lastEnd, end)
             

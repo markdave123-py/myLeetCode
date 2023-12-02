@@ -21,8 +21,6 @@ class Solution(object):
                 out.append(0)
 
             l += 1
-
-
         res = [0]*len(temperatures)
         stack = []
 

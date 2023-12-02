@@ -13,8 +13,7 @@ class Solution(object):
         while(f < len(prices)):
             if prices[f] < prices[s]:
                 s = f
-                
-
+            
             else:
                 if maxProfit < (prices[f] - prices[s]):
                     maxProfit = prices[f] - prices[s]
