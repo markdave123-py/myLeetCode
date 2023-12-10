@@ -5,19 +5,11 @@ class Solution(object):
         :type needle: str
         :rtype: int
         """
-        arr = 0
-        l = 0
-        i = 0
-        currf = s[0]
+        if needle == "":
+            return 0
 
-        while i < len(t):
-            arr.apend(t[i])
-            while l < len(s):
-                if s[l] == t[i]:
-                    arrr.pop()
-                    i += 1
-                    l += 1
+        for i in range(len(haystack) + 1 - len(needle)):
+            if haystack[i: i + len(needle)] == needle:
+                return i
 
-                else:
-                    l += 1
-        
+        return -1
