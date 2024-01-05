@@ -19,7 +19,7 @@ class Solution(object):
         #     else:
         #         curr.nxt = None
 
-        #     curr = curr.next
+        #     curr = curr.nextremove
 
         # return head
 
