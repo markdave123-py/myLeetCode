@@ -8,10 +8,10 @@ class TreeNode(object):
 
 class Solution(object):
     def sortedArrayToBST(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
+        # """
+        # :type nums: List[int]
+        # :rtype: TreeNode
+        # """
         numLen = len(nums)
         if not numLen:
             return None

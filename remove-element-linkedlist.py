@@ -10,19 +10,20 @@ class Solution(object):
         :type val: int
         :rtype: ListNode
         """
-        # curr = head
-        # while curr:
-        #     nxt = curr.next
-        #     if curr.next:
-        #         if nxt.val == val:
-        #             curr.next = nxt.next
-        #     else:
-        #         curr.nxt = None
+        curr = head
+        while curr:
+            nxt = curr.next
+            if curr.next:
+                if nxt.val == val:
+                    curr.next = nxt.next
+            else:
+                curr.nxt = None
 
-        #     curr = curr.nextremove
+            curr = curr.nextremove
 
-        # return head
+        return head
 
+        
         if not head: return None
         head.next = self.removeElements(head.next, val)
         return head.next if head.val == val else head
