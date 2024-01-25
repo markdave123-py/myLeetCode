@@ -6,4 +6,4 @@ class Solution(object):
         :rtype: str
         """
 
-        return format((int(a,2)+int(b, 2)), 'b')
+        return format((int(a, 2)+int(b, 2)), 'b')
